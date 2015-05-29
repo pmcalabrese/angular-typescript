@@ -2,12 +2,14 @@
 
 ## Getting started
 
-- clone or download repo
+- clone or download the repo
 - run ```sudo npm install -g gulp bower tsd``` ( *install global tools* )
 - run ```npm install``` ( *install project specific tools* )
 - run ```bower install``` ( *install frontend dependency* )
 - run ```tsd reinstall``` ( *install Typescript definitions* )
 - run ```gulp``` or ```gulp watch``` ( *build frontend* )
+
+*```gulp watch``` or ```gulp serve``` serve will run a server on localhost:8000, serving the ```dist``` folder*
 
 ## TL;DR
 
@@ -20,7 +22,8 @@
 
 ###Tasks (Gulp)
 
-- The app use [Gulp](http://gulpjs.com/) as task manager, mostly you will use ```gulp watch``` and ```gulp```. You can see all the tasks in by running ```gulp help```
+- The app use [Gulp](http://gulpjs.com/) as task manager, mostly you will use ```gulp watch``` and ```gulp```. You can see all the tasks in by running ```gulp help```.
+- The configuration for gulp is in ```gulp.config.js``` file.
 
 ###Frontend library depndecy (Bower)
 
@@ -34,7 +37,7 @@
 - After you download type definition you need to add the reference the file ```src/_all.d.ts``` contains all the type definitions references
 
 
-The follwing Resources has been used for learning:
+Useful resources for learn Typescript and Angualr:
 - http://kwilson.me.uk/blog/writing-cleaner-angularjs-with-typescript-and-controlleras/
 - https://github.com/tastejs/todomvc/blob/gh-pages/examples/typescript-angular/js/controllers/TodoCtrl.ts
 
