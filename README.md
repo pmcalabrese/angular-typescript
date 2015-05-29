@@ -25,7 +25,7 @@
 - The app use [Gulp](http://gulpjs.com/) as task manager, mostly you will use ```gulp watch``` and ```gulp```. You can see all the tasks in by running ```gulp help```.
 - The configuration for gulp is in ```gulp.config.js``` file.
 
-###Frontend library depndecy (Bower)
+###Frontend library dependency manager (Bower)
 
 - Third party libs are managed with [Bower](http://bower.io/). It comes down to two basically commands: ```bower install <package>``` and ```bower update```. Bower keeps track of these packages in a manifest file, bower.json.
 
