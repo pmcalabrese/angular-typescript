@@ -1,0 +1,33 @@
+<!-- Container #1 (see wireframe) -->
+<md-toolbar layout="row" >
+    <md-switch ng-model="vm.editEnable" aria-label="Edit">
+    Edit <span ng-show="vm.editEnable">on</span><span ng-hide="vm.editEnable">off</span>
+  </md-switch>
+    <h1>Angualr Typescript test change it changed</h1>
+</md-toolbar>
+
+<!-- Container #2 -->
+<div layout="column">
+
+    <md-content layout="row" layout-align="center center">
+        <div class="editable-content" ng-class="vm.editEnable ? 'editable-content--enable' : ''">
+            <div>
+                <h2 ng-if="vm.website_items.length === 0"><i>Add some content</i></h2>
+                <div ng-show="vm.editEnable" class="edit-control">
+                    <md-button class="md-mini md-raised" ng-click="vm.addElement('h1',-1)">+Title</md-button>
+                    <md-button class="md-mini md-raised" ng-click="vm.addElement('p',-1)">+paragraph</md-button>
+                </div>
+            </div>
+            <div ng-if="vm.website_items.length > 0" ng-repeat="wi in vm.website_items">
+                <editelem edit-on="vm.editOn[$index] && vm.editEnable" ng-click="vm.editOn[$index] = true" et="{{wi.dom_element}}" elvalue="wi.value">{{wi.value}}</editelem>
+                <div ng-show="vm.editEnable" class="edit-control">
+                    <md-button class="md-mini md-raised md-primary" ng-if="vm.editOn[$index]" ng-click="vm.editOn[$index] = false">Save</md-button>
+                    <md-button class="md-mini md-raised" ng-click="vm.deleteElement($index)">Delete</md-button>
+                    <md-button class="md-mini md-raised" ng-click="vm.addElement('h1',$index)">+ Title</md-button>
+                    <md-button class="md-mini md-raised" ng-click="vm.addElement('p',$index)">+ paragraph</md-button>
+                </div>
+            </div>
+        </div>
+    </md-content>
+
+</div>

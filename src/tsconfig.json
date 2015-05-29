@@ -1,0 +1,26 @@
+{
+    "version": "1.5.0-alpha",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "filesGlob": [
+        "./**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "./_all.d.ts",
+        "./common/directives/edit-controls.ts",
+        "./common/filters/filter.ts",
+        "./common/services/storageService.ts",
+        "./common/services/websiteService.ts",
+        "./components/app.ts",
+        "./components/home/home.ts"
+    ]
+}
