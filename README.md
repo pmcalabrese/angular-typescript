@@ -1,5 +1,7 @@
 # Angular Typescript app
 
+![Angular Typescript](./angular-typescript.png)
+
 ## Getting started
 
 - clone or download the repo
