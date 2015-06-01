@@ -46,6 +46,6 @@ __Very very good read on folder structure and Style guide__
 
 [Folder structure](https://scotch.io/tutorials/angularjs-best-practices-directory-structure)
 
-[Todd Motto Style guide](https://github.com/toddmotto/angularjs-styleguide#modules)
+[Todd Motto Style guide](https://github.com/toddmotto/angularjs-styleguide)
 
 [John Papa Style guide](https://github.com/johnpapa/angular-styleguide)
