@@ -4,14 +4,17 @@
 
 ## Getting started
 
-- clone or download the repo
-- run ```sudo npm install -g gulp bower tsd``` ( *install global tools* )
-- run ```npm install``` ( *install project specific tools* )
-- run ```bower install``` ( *install frontend dependency* )
-- run ```tsd reinstall``` ( *install Typescript definitions* )
-- run ```gulp``` or ```gulp watch``` ( *build frontend* )
+- Clone or ownload the repo
+- Run ```sudo npm install -g gulp bower tsd``` ( *install global tools* )
+- ```cd``` into the project folder
+- Run ```npm install``` ( *install project specific tools* )
+- Run ```bower install``` ( *install frontend dependency* )
+- Run ```tsd reinstall``` ( *install Typescript definitions* )
+- ```cd``` into the gulp folder and:
+    - run ```gulp watch``` (if you want build and serve the frontend and automatic reload the browser in case of changes, **good for development**)
+    - or ```gulp``` ( *build frontend* ) and ```gulp serve``` ( *serve the ```dist``` folder* ).
 
-*```gulp watch``` or ```gulp serve``` serve will run a server on localhost:8000, serving the ```dist``` folder*
+NOTE: *if you want to change port of the statci server go to ```gulp/gulp.serve.js``` file*
 
 ## TL;DR
 
