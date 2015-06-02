@@ -4,6 +4,8 @@
 
 ## Getting started
 
+Prerequisite: *You need to have node npm and git installed*
+
 - Clone or ownload the repo
 - Run ```sudo npm install -g gulp bower tsd``` ( *install global tools* )
 - ```cd``` into the project folder
@@ -14,7 +16,7 @@
     - run ```gulp watch``` (if you want build and serve the frontend and automatic reload the browser in case of changes, **good for development**)
     - or ```gulp``` ( *build frontend* ) and ```gulp serve``` ( *serve the ```dist``` folder* ).
 
-NOTE: *if you want to change port of the statci server go to ```gulp/gulp.serve.js``` file*
+Note: *if you want to change port of the statci server go to ```gulp/gulp.serve.js``` file*
 
 ## TL;DR
 
