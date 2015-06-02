@@ -2,7 +2,7 @@
 
 ![Angular Typescript](./angular-typescript.png)
 
-## Getting started
+## Fast Getting started
 
 Prerequisite: *You need to have [nodejs npm](https://nodejs.org/) and [git](https://git-scm.com/) installed*
 
