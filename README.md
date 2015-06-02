@@ -4,9 +4,9 @@
 
 ## Getting started
 
-Prerequisite: *You need to have node npm and git installed*
+Prerequisite: *You need to have [nodejs npm](https://nodejs.org/) and [git](https://git-scm.com/) installed*
 
-- Clone or ownload the repo
+- Clone or download the repo
 - Run ```sudo npm install -g gulp bower tsd``` ( *install global tools* )
 - ```cd``` into the project folder
 - Run ```npm install``` ( *install project specific tools* )
