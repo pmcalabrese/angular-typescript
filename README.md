@@ -12,11 +12,10 @@ Prerequisite: *You need to have [nodejs npm](https://nodejs.org/) and [git](http
 - Run ```npm install``` ( *install project specific tools* )
 - Run ```bower install``` ( *install frontend dependency* )
 - Run ```tsd reinstall``` ( *install Typescript definitions* )
-- ```cd``` into the gulp folder and:
-    - run ```gulp watch``` (if you want build and serve the frontend and automatic reload the browser in case of changes, **good for development**)
-    - or ```gulp``` ( *build frontend* ) and ```gulp serve``` ( *serve the ```dist``` folder* ).
+- run ```gulp watch``` (if you want build and serve the frontend and automatic reload the browser in case of changes, **good for development**)
+- or ```gulp``` ( *build frontend* ) and ```gulp serve``` ( *serve the ```dist``` folder* ).
 
-Note: *if you want to change port of the statci server go to ```gulp/gulp.serve.js``` file*
+Note: *if you want to change port of the statci server go to ```gulp_tasks/gulp.serve.js``` file*
 
 ## TL;DR
 
