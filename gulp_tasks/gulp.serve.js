@@ -16,7 +16,7 @@ var serverConfig = {
 
 module.exports = function(gulp){
 	gulp.task('serve', 'Run a static Node.js server for development on port '+serverConfig.port, function() {
-	  gulp.src(config.dist)
-	    .pipe(server(serverConfig));
+		return gulp.src(config.dist)
+			.pipe(server(serverConfig));
 	});
 };

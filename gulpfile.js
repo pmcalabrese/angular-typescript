@@ -44,15 +44,15 @@ require('./gulp_tasks/gulp.size')(gulp);
 // Creates a default build task
 var default_tasks = ['sass','copy','ts','libs.script','libs.css'];
 gulp.task('default', "Run "+default_tasks.toString(), default_tasks , function(cb) {
-    // runSequence(['sass'], cb);
+    return gulp.src(config.app.script);
 });
 
 // Creates a watch task to watch files and build async
 gulp.task('watch', 'Run the default task and then serve, while it serves whatch for files and run the task accordingly. If you are a developer you want to start from here' ,function (cb) {
-    runSequence(['default','serve'],cb);
     gulp.watch(config.app.sass_all, ['sass']);
     gulp.watch(config.app.copy, ['copy']);
     gulp.watch(config.app.script, ['ts']);
     gulp.watch(config.libs.script, ['libs.script']);
     gulp.watch(config.libs.css, ['libs.css']);
+    runSequence('default','serve',cb);
 });
