@@ -33,6 +33,9 @@ require('./gulp_tasks/gulp.serve')(gulp);
 // Imports Serve - spin a development server on port 8000
 require('./gulp_tasks/gulp.typedoc')(gulp);
 
+// Imports Serve - spin a development server on port 8000
+require('./gulp_tasks/gulp.size')(gulp);
+
 
 ///
 ///  Setup group tasks
