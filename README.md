@@ -33,7 +33,7 @@ Note: *if you want to change port of the statci server go to ```gulp_tasks/gulp.
 - The app use [Gulp](http://gulpjs.com/) as task manager, mostly you will use ```gulp watch``` and ```gulp```. You can see all the tasks in by running ```gulp help```.
 - The configuration for gulp is in ```gulp.config.js``` file.
 
-**Supports sourcemaps for Typescript**
+**It supports sourcemaps for Typescript**
 
 ![Angular Typescript](./typescript-sourcemaps.png)
 
@@ -61,3 +61,5 @@ __Very very good read on folder structure and Style guide__
 [Todd Motto Style guide](https://github.com/toddmotto/angularjs-styleguide)
 
 [John Papa Style guide](https://github.com/johnpapa/angular-styleguide)
+
+[Simple Angualr Typescript written by Dan Wahlin](https://github.com/DanWahlin/AngularIn20TypeScript)
