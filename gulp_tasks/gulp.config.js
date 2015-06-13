@@ -5,9 +5,10 @@ var globalPath = {
 
 module.exports = {
 	app: {
+        base: globalPath.app,
         script: [
-            globalPath.app+'common/**/*ts',
-            globalPath.app+'components/**/*ts',
+            globalPath.app+'common/**/*.ts',
+            globalPath.app+'components/**/*.ts',
             globalPath.app+'components/app.ts'
     	],
         sass: [
@@ -19,6 +20,14 @@ module.exports = {
         copy: [
             globalPath.app+"index.html",
             globalPath.app+"components/**/*.html"
+        ],
+        copy_ts: [
+            globalPath.app+"common/**/*.ts",
+            globalPath.app+"components/**/*.ts"
+        ],
+        dts: [
+            './typings/**/*.ts',
+        	'./src/_all.d.ts'
         ]
     },
     libs: {

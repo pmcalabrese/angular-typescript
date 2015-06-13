@@ -23,9 +23,9 @@
     "gulp-server-livereload": "^1.3.0",
     "gulp-typedoc": "^1.1.0",
     "gulp-typescript": "^2.7.5",
-    "run-sequence": "^1.1.0"
-  },
-  "dependencies": {
-    "gulp-size": "^1.2.1"
+    "run-sequence": "^1.1.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-size": "^1.2.1",
+    "gulp-sourcemaps": "^1.5.2"
   }
 }
