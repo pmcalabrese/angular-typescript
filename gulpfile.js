@@ -55,6 +55,7 @@ gulp.task('watch', 'Run the default task and then serve, while it serves whatch 
     gulp.watch(config.app.sass_all, ['sass']);
     gulp.watch(config.app.copy, ['copy']);
     gulp.watch(config.app.script, ['ts','copy.ts']);
+    gulp.watch(config.app.dts, ['ts','copy.ts']);
     gulp.watch(config.libs.script, ['libs.script']);
     gulp.watch(config.libs.css, ['libs.css']);
     runSequence('default','serve',cb);
