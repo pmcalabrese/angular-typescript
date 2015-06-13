@@ -1,5 +1,7 @@
 # Angular Typescript app
 
+Tiny Angular app written in Typescript perfect as boilerplate.
+
 ![Angular Typescript](./angular-typescript.png)
 
 ## Getting started
@@ -30,6 +32,10 @@ Note: *if you want to change port of the statci server go to ```gulp_tasks/gulp.
 
 - The app use [Gulp](http://gulpjs.com/) as task manager, mostly you will use ```gulp watch``` and ```gulp```. You can see all the tasks in by running ```gulp help```.
 - The configuration for gulp is in ```gulp.config.js``` file.
+
+**Supports sourcemaps for Typescript**
+
+![Angular Typescript](./typescript-sourcemaps.png)
 
 ###Frontend library dependency manager (Bower)
 
