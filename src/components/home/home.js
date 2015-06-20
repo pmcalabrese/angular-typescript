@@ -6,8 +6,15 @@ var HomeComponent;
 (function (HomeComponent) {
     var HomeController = (function () {
         function HomeController($scope, WebsiteItems) {
+            var _this = this;
             this.$scope = $scope;
             this.WebsiteItems = WebsiteItems;
+            this.addElement = function (element, index) {
+                _this.WebsiteItems.add(element, index);
+            };
+            this.deleteElement = function (index) {
+                _this.WebsiteItems.remove(index);
+            };
             this.website_items = WebsiteItems.getItems();
             $scope.$watch("vm.website_items", function (newValue, oldValue) {
                 if (JSON.stringify(newValue) === JSON.stringify(oldValue))
@@ -16,12 +23,6 @@ var HomeComponent;
                 WebsiteItems.save(newValue);
             }, true);
         }
-        HomeController.prototype.addElement = function (element, index) {
-            this.WebsiteItems.add(element, index);
-        };
-        HomeController.prototype.deleteElement = function (index) {
-            this.WebsiteItems.remove(index);
-        };
         HomeController.$inject = ['$scope', 'WebsiteItems'];
         return HomeController;
     })();

@@ -23,12 +23,12 @@ module HomeComponent {
         }
 
         // add element
-        addElement(element: string, index: number): void {
+        addElement = (element: string, index: number): void => {
             this.WebsiteItems.add(element,index);
         }
 
         // delete element
-        deleteElement(index: number): void {
+        deleteElement = (index: number): void => {
             this.WebsiteItems.remove(index);
         }
     }
