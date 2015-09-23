@@ -24,7 +24,11 @@ Note: *if you want to change port of the static server go to ```gulp_tasks/gulp.
 - src folder contains the source code, here is where you need to work
 - dist folder contains the deployed folder this is what is served when you run ```gulp serve``` or ```gulp watch```
 - in the ```src``` folder the app is bootstrap in the ```components/app.ts``` file
-- in the ```src``` folder each component has its own folder containing controller and view. So a home controller will have: ```components/home/home.ts``` and ```components/home/home.html```
+- in the ```src``` folder each component has its own folder containing controller and view. The home controller for example will have:
+
+- ```components/home/home.ts``` (angular controller in Typescript)
+- ```components/home/home.html``` (HTML view)
+- ```components/home/_home.scss``` (SASS style)
 
 ###Tasks (Gulp)
 
