@@ -1,4 +1,3 @@
-/// <reference path="../_all.d.ts"/>
 var App;
 (function (App) {
     'use strict';

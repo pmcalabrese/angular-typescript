@@ -1,4 +1,3 @@
-/// <reference path="../../_all.d.ts"/>
 var Common;
 (function (Common) {
     var Directives;

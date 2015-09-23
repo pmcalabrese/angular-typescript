@@ -6,18 +6,16 @@ Tiny Angular app written in Typescript perfect as boilerplate.
 
 ## Getting started
 
-Prerequisite: *You need to have [nodejs npm](https://nodejs.org/) and [git](https://git-scm.com/) installed*
+Prerequisites: *You need to have [nodejs npm](https://nodejs.org/) and [git](https://git-scm.com/) installed*
 
 - Clone or download the repo
 - Run ```sudo npm install -g gulp bower tsd``` ( *install global tools* )
 - ```cd``` into the project folder
-- Run ```npm install``` ( *install project specific tools* )
-- Run ```bower install``` ( *install frontend dependency* )
-- Run ```tsd reinstall``` ( *install Typescript definitions* )
+- Run ```npm run build``` ( *install project tools, libs and typings* )
 - run ```gulp watch``` (if you want build and serve the frontend and automatic reload the browser in case of changes, **good for development**)
 - or ```gulp``` ( *build frontend* ) and ```gulp serve``` ( *serve the ```dist``` folder* ).
 
-Note: *if you want to change port of the statci server go to ```gulp_tasks/gulp.serve.js``` file*
+Note: *if you want to change port of the static server go to ```gulp_tasks/gulp.serve.js``` file*
 
 ## TL;DR
 
@@ -44,12 +42,12 @@ Note: *if you want to change port of the statci server go to ```gulp_tasks/gulp.
 ###Typescript
 
 - This app is written in [Typescript](http://www.typescriptlang.org/).
-- The Typescript Definition are managed by [tsd](https://www.npmjs.com/package/tsd) and are downloaded by tsd in the folder ```typings```.
-- For manage type definitions follow the guide on [tsd](https://www.npmjs.com/package/tsd) anyway comes down to two main commands ```tsd install <package> --resolve --save``` for install and ```tsd query angular*``` for search.
-- After you download type definition you need to add the reference the file ```src/_all.d.ts``` contains all the type definitions references
+- The Typescript Definition are managed by [tsd](https://www.npmjs.com/package/tsd) and are downloaded by tsd in the folder ```typings```. The type definition file for the libs (```src/typings/tsd.d.ts```) is automatically genereated.
+- For manage type definitions there are two main commands ```tsd install <package> --resolve --save``` for install and ```tsd query angular*``` for search, for more info follow the guide on [tsd](https://www.npmjs.com/package/tsd).
+- The type definition references of your app go to the file ```src/_app.d.ts```.
 
 
-Useful resources for learn Typescript and Angualr:
+Useful resources for learn Typescript and Angular:
 - http://kwilson.me.uk/blog/writing-cleaner-angularjs-with-typescript-and-controlleras/
 - https://github.com/tastejs/todomvc/blob/gh-pages/examples/typescript-angular/js/controllers/TodoCtrl.ts
 

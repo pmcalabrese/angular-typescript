@@ -1,7 +1,5 @@
-/// <reference path="../../_all.d.ts"/>
 var WebsiteService;
 (function (WebsiteService) {
-    'use strict';
     var WebsiteItems = (function () {
         function WebsiteItems(localStorage) {
             this.localStorage = localStorage;

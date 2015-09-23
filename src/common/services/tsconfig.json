@@ -1,8 +1,13 @@
 {
-    "version": "1.5.0-alpha",
+    "version": "1.5.0-beta",
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
+        "moduleResolution": "node",
+        "isolatedModules": false,
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
         "declaration": false,
         "noImplicitAny": false,
         "removeComments": true,
@@ -12,15 +17,11 @@
     },
     "filesGlob": [
         "./**/*.ts",
-        "!./node_modules/**/*.ts"
+        "./**/*.tsx",
+        "!./node_modules/**/*"
     ],
     "files": [
-        "./_all.d.ts",
-        "./common/directives/edit-controls.ts",
-        "./common/filters/filter.ts",
-        "./common/services/storageService.ts",
-        "./common/services/websiteService.ts",
-        "./components/app.ts",
-        "./components/home/home.ts"
+        "./storageService.ts",
+        "./websiteService.ts"
     ]
 }

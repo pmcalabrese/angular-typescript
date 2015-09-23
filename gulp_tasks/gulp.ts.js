@@ -15,9 +15,9 @@ module.exports = function(gulp){
 		   .pipe(sourcemaps.init())
 		   .pipe(ts({
 				target: 'ES5',
-				declarationFiles: false,
+				declarationFiles: true,
 				noExternalResolve: true,
-				noImplicitAny: true,
+				noImplicitAny: false,
 				out: 'main.js'
 		   }));
 

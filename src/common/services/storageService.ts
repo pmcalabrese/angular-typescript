@@ -1,12 +1,6 @@
-/// <reference path="../../_all.d.ts"/>
+/// <reference path="../../_app.d.ts"/>
 
 module StorageService {
-    'use strict';
-
-    export interface IlocalStorage {
-        get(name: string): Array<any>;
-        set(name:string, value:any): void;
-    }
 
     export class localStorage {
 

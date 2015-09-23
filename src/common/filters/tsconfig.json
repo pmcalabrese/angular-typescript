@@ -21,7 +21,6 @@
         "!./node_modules/**/*"
     ],
     "files": [
-        "./app.ts",
-        "./home/home.ts"
+        "./filter.ts"
     ]
 }

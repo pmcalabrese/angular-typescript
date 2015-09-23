@@ -1,4 +1,4 @@
-/// <reference path="../_all.d.ts"/>
+/// <reference path="../_app.d.ts"/>
 
 module App {
     'use strict';

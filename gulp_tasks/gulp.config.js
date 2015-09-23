@@ -15,6 +15,7 @@ module.exports = {
             globalPath.app+'sass/app.scss'
     	],
         sass_all: [
+            globalPath.app+"components/**/*.sass",
             globalPath.app+'sass/*/*.scss'
         ],
         copy: [
@@ -27,7 +28,7 @@ module.exports = {
         ],
         dts: [
             './typings/**/*.ts',
-        	'./src/_all.d.ts'
+        	'./src/**/*.ts'
         ]
     },
     libs: {

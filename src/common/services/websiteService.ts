@@ -1,19 +1,11 @@
-/// <reference path="../../_all.d.ts"/>
+/// <reference path="../../_app.d.ts"/>
 
 module WebsiteService {
-    'use strict';
-
-    export interface IWebsiteItems {
-        getItems(): Array<any>;
-        add(element: string, index: number): void;
-        remove(index: number): void;
-        save(newValue: any): void;
-    }
 
     export class WebsiteItems {
 
         static $inject = ['localStorage'];
-        constructor(public localStorage: StorageService.IlocalStorage) {
+        constructor(public localStorage: StorageService.localStorage) {
 
         }
 

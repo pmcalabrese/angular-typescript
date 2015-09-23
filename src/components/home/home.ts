@@ -1,4 +1,4 @@
-/// <reference path="../../_all.d.ts"/>
+/// <reference path="../../_app.d.ts"/>
 // https://github.com/DefinitelyTyped/tsd
 // http://kwilson.me.uk/blog/writing-cleaner-angularjs-with-typescript-and-controlleras/
 // https://github.com/tastejs/todomvc/blob/gh-pages/examples/typescript-angular/js/controllers/TodoCtrl.ts
@@ -10,7 +10,7 @@ module HomeComponent {
         website_items: any[];
 
         static $inject = ['$scope','WebsiteItems'];
-        constructor(public $scope: ng.IScope,public WebsiteItems: WebsiteService.IWebsiteItems) {
+        constructor(public $scope: ng.IScope,public WebsiteItems: WebsiteService.WebsiteItems) {
 
             this.website_items = WebsiteItems.getItems();
 

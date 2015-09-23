@@ -1,7 +1,3 @@
-/// <reference path="../../_all.d.ts"/>
-// https://github.com/DefinitelyTyped/tsd
-// http://kwilson.me.uk/blog/writing-cleaner-angularjs-with-typescript-and-controlleras/
-// https://github.com/tastejs/todomvc/blob/gh-pages/examples/typescript-angular/js/controllers/TodoCtrl.ts
 var HomeComponent;
 (function (HomeComponent) {
     var HomeController = (function () {
