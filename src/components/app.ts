@@ -12,11 +12,13 @@ module App {
         'WebsiteService',
         'StorageService'
     ]).
-    config(['$locationProvider','$stateProvider','$urlRouterProvider',Config]).
+    config(['$locationProvider','$stateProvider','$urlRouterProvider','$compileProvider',Config]).
     run(['$state',Run]);
 
-    function Config($locationProvider: ng.ILocationProvider, $stateProvider: angular.ui.IStateProvider ,$urlRouterProvider: angular.ui.IUrlRouterProvider): void {
+    function Config($locationProvider: ng.ILocationProvider, $stateProvider: angular.ui.IStateProvider ,$urlRouterProvider: angular.ui.IUrlRouterProvider, $compileProvider: ng.ICompileProvider): void {
         console.log("config");
+
+        $compileProvider.debugInfoEnabled(true);
 
         $stateProvider.
         state('home', {

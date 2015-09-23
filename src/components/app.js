@@ -10,10 +10,11 @@ var App;
         'WebsiteService',
         'StorageService'
     ]).
-        config(['$locationProvider', '$stateProvider', '$urlRouterProvider', Config]).
+        config(['$locationProvider', '$stateProvider', '$urlRouterProvider', '$compileProvider', Config]).
         run(['$state', Run]);
-    function Config($locationProvider, $stateProvider, $urlRouterProvider) {
+    function Config($locationProvider, $stateProvider, $urlRouterProvider, $compileProvider) {
         console.log("config");
+        $compileProvider.debugInfoEnabled(true);
         $stateProvider.
             state('home', {
             url: "/",
