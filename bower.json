@@ -20,12 +20,10 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.0",
-    "angular-route": "~1.4.0",
-    "angular-material": "~0.9.4",
-    "lodash": "~3.9.0"
-  },
-  "devDependencies": {
-    "angular-ui-router": "~0.2.15"
+    "angular": "~1.5.*",
+    "angular-route": "~1.5.*",
+    "angular-material": "~1.*",
+    "lodash": "~4.0",
+    "angular-ui-router": "~0.2.*"
   }
 }
